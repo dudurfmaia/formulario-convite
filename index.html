@@ -15,13 +15,238 @@
     />
   </head>
   <body>
-    <main class="container">
-      <img src="./assets/Background.png" alt="Foto de bolo">
-      <header>
-        <img src="./assets/Logo.svg" alt="">
-        <h1>Festivite</h1>
-        <p>Crie um convite digital para o seu evento</p>
-      </header>
-    </main>
+    <div id="page">
+      <main class="container">
+        <img src="./assets/Background.png" alt="Foto de bolo" />
+        <header>
+          <img src="./assets/Logo.svg" alt="" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+      </main>
+
+      <aside class="container">
+        <fieldset>
+          <legend>Crie seu convite</legend>
+          <header>
+            <i data-lucide="calendar" class="calendar"></i>
+            <h1>Sobre o evento</h1>
+          </header>
+          <form>
+            <label for="title">Título</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Nome do evento"
+              required
+            />
+            <div class="radio-wrapper">
+              <div>
+                <label
+                  for="date"
+                  style="display: block; cursor: pointer; width: 100%"
+                  >Início</label
+                >
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div>
+                <label for="date">Fim</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="radio">
+                <label class="title" for="type">Tipo</label>
+                <div class="buttonum">
+                  <label for="type">
+                    <img
+                      src="./assets/icons/building-22.svg"
+                      alt=""
+                    />Presencial
+                    <input
+                      type="radio"
+                      name="type"
+                      id="type"
+                      value="Presencial"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="button">
+                  <label for="type">
+                    <img src="./assets/icons/video.svg" alt="" />Online
+                    <input
+                      type="radio"
+                      name="type"
+                      id="type"
+                      value="Online"
+                      required
+                    />
+                  </label>
+                </div>
+              </div>
+              <div>
+                <label for="local">Local</label>
+                <input
+                  type="local"
+                  id="local"
+                  name="local"
+                  placeholder="Link ou endereço"
+                  required
+                />
+              </div>
+            </div>
+            <div class="desc">
+              <label for="dec">Descrição</label>
+              <textarea
+                name="desc"
+                id="desc"
+                rows="5"
+                placeholder="Escreva sobre os detalhes do evento"
+              ></textarea>
+            </div>
+            <div class="person">
+              <div class="header">
+                <img src="./assets/icons/paintbrush-vertical.svg" alt="" />
+                <h1>Personalização</h1>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="option1"
+                  name="option"
+                  class="radio-input"
+                />
+                <label for="option1" class="radio-label"></label>
+
+                <input
+                  type="radio"
+                  id="option2"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option2"
+                  class="radio-label"
+                  style="background-color: var(--navy)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option3"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option3"
+                  class="radio-label"
+                  style="background-color: var(--purple)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option4"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option4"
+                  class="radio-label"
+                  style="background-color: var(--fuschia)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option5"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option5"
+                  class="radio-label"
+                  style="background-color: var(--pink)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option6"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option6"
+                  class="radio-label"
+                  style="background-color: #ff5959"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option7"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option7"
+                  class="radio-label"
+                  style="background-color: var(--orange)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option8"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option8"
+                  class="radio-label"
+                  style="background-color: var(--yellow)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option9"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option9"
+                  class="radio-label"
+                  style="background-color: var(--lime)"
+                ></label>
+
+                <input
+                  type="radio"
+                  id="option10"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option10"
+                  class="radio-label"
+                  style="background-color: var(--green)"
+                ></label>
+                <input
+                  type="radio"
+                  id="option11"
+                  name="option"
+                  class="radio-input"
+                />
+                <label
+                  for="option11"
+                  class="radio-label"
+                  style="background-color: var(--cyan)"
+                ></label>
+              </div>
+            </div>
+          </form>
+        </fieldset>
+      </aside>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

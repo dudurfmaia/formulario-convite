@@ -30,7 +30,7 @@
   --logo: 400 2.5rem/1.375rem "Leckerli One", cursive;
 
   --heading-md: 700 1.75rem/1.375rem "Baloo 2", sans-serif;
-  --heading-sm: 700 1.125rem/1.375rem "Baloo 2", sans-serif;
+  --heading-sm: 700 1.125rem/22px "Baloo 2", sans-serif;
 
   --body-md: 400 1rem/1.375rem "Open Sans", sans-serif;
   --body-md-semi: 600 1rem/1.375rem "Open Sans", sans-serif;
@@ -38,4 +38,26 @@
   --body-sm-semi: 600 0.875rem/1.375rem "Open Sans", sans-serif;
   --body-xs: 400 0.75rem/1.375rem "Open Sans", sans-serif;
   --body-xs-semi: 600 0.75rem/1.375rem "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--shape-background);
+  overflow: hidden;
+}
+
+#page {
+  display: grid;
+  grid-template-columns: 31.25% 68.75%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

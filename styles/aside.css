@@ -1,0 +1,202 @@
+aside {
+  margin: 1.25rem;
+  background-color: var(--shape-body);
+  border-radius: 12px;
+  position: relative;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+fieldset {
+  border: none;
+  margin-inline: 8.125rem;
+  margin-top: 5rem;
+  & .calendar {
+    color: var(--input-placeholder);
+  }
+  & header {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    vertical-align: middle;
+    & h1 {
+      font: var(--heading-sm);
+      color: var(--text-heading);
+    }
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  & legend {
+    font: var(--heading-md);
+    color: var(--text-heading);
+  }
+}
+
+form {
+  display: grid;
+  width: 35rem;
+  margin-top: 1.5rem;
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+  & input:not(.color-wrapper) {
+    background-color: var(--input-base);
+    margin-top: 0.75rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 35rem;
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    font: var(--body-md);
+    height: 3rem;
+    color: var(--input-placeholder);
+  }
+}
+
+.radio-wrapper {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  & input[type="date"] {
+    color: var(--input-placeholder);
+    text-transform: uppercase;
+    height: 3rem;
+  }
+  & input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+.title {
+  display: flex;
+  position: absolute;
+  bottom: 62px;
+}
+.radio:not(.title) {
+  border-radius: 8px;
+  border: 1px solid var(--input-stroke);
+  height: 48px;
+  margin-top: 2.2rem;
+  background-color: var(--input-base);
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  position: relative;
+  width: 272px;
+
+  & label:not(.title) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    padding: 10.5px 18px;
+    text-align: center;
+
+    margin-top: 2px;
+    & img {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+  & label:hover,
+  & label:focus:not(.title) {
+    background-color: var(--input-stroke);
+    border-radius: 8px;
+  }
+
+  & input {
+    all: unset;
+  }
+}
+
+.button {
+  width: 8rem;
+}
+.buttonum {
+  margin-left: 1.5rem;
+}
+
+.desc {
+  margin-top: 1rem;
+  display: grid;
+  & textarea {
+    margin-top: 0.5rem;
+    background-color: var(--input-base);
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    padding: 1rem;
+    font: var(--body-md);
+    color: var(--input-placeholder);
+  }
+}
+
+.person {
+  margin-top: 3rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  & h1 {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+  }
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+.radio-group {
+  display: flex;
+  gap: 0.2rem;
+}
+.radio-input {
+  display: none;
+}
+
+/* Estilo personalizado para o radio */
+.radio-label {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 6px solid var(--shape-button);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: var(--brand-light);
+  transition: border-color 0.3s;
+}
+
+/* Estilo do círculo interno para o radio selecionado */
+.radio-input:checked + .radio-label::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 50%;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: var(--brand-light); /* Cor da borda ao selecionar */
+  box-shadow: 0 0 0 2px var(--brand-light); /* Borda ao redor */
+}
+
+/* Muda a cor da borda ao passar o mouse */
+.radio-label:hover {
+  border-color: var(--input-stroke);
+}
