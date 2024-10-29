@@ -4,7 +4,7 @@ aside {
   border-radius: 12px;
   position: relative;
   overflow-y: auto;
-  height: 100vh;
+  height: 94vh;
 }
 
 fieldset {
@@ -38,13 +38,13 @@ fieldset {
 
 form {
   display: grid;
-  width: 35rem;
+  align-items: center;
   margin-top: 1.5rem;
   & label {
     font: var(--body-sm);
     color: var(--text-body);
   }
-  & input:not(.color-wrapper) {
+  & input:not(.color-wrapper, input[type="button"], input[type="file"]) {
     background-color: var(--input-base);
     margin-top: 0.75rem;
     padding: 1rem;
@@ -60,6 +60,7 @@ form {
 
 .radio-wrapper {
   display: grid;
+  width: 35rem;
   margin-top: 1rem;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -135,6 +136,7 @@ form {
     border-radius: 8px;
     border: 1px solid var(--input-stroke);
     padding: 1rem;
+    width: 35rem;
     font: var(--body-md);
     color: var(--input-placeholder);
   }
@@ -142,6 +144,8 @@ form {
 
 .person {
   margin-top: 3rem;
+  width: 35rem;
+  max-width: 100%;
 }
 .header {
   display: flex;
@@ -159,14 +163,15 @@ form {
 }
 .radio-group {
   display: flex;
-  gap: 0.2rem;
+  justify-content: space-between;
 }
+
 .radio-input {
   display: none;
 }
 
 /* Estilo personalizado para o radio */
-.radio-label {
+.radio-label:not(.theme-label) {
   margin-top: 1rem;
   display: inline-block;
   width: 2.5rem;
@@ -175,7 +180,6 @@ form {
   border-radius: 50%;
   position: relative;
   cursor: pointer;
-  margin-right: 10px;
   background-color: var(--brand-light);
   transition: border-color 0.3s;
 }
@@ -199,4 +203,9 @@ form {
 /* Muda a cor da borda ao passar o mouse */
 .radio-label:hover {
   border-color: var(--input-stroke);
+}
+
+.color-legend {
+  font: var(--body-sm);
+  color: var(--text-body);
 }

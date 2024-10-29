@@ -1,0 +1,63 @@
+.theme {
+  display: grid;
+  position: relative;
+  width: 35rem;
+}
+.legend-theme {
+  font: var(--body-sm);
+  margin-top: 1.75rem;
+  color: var(--text-body);
+  margin-bottom: 1rem;
+}
+
+.theme-input {
+  display: none;
+}
+.theme-wrapperr {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.theme-wrapper {
+  display: grid;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.theme-label {
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0.5px solid var(--input-stroke);
+  width: 8.375rem;
+  padding: 4px;
+
+  padding: 4px;
+  background-color: var(--shape-button);
+  align-items: center;
+  transition: background 0.3s;
+  transition: border-color 0.3s;
+  & p {
+    font: var(--body-sm);
+    color: var(--text-heading);
+    margin-top: 0.5rem;
+  }
+}
+.theme-label:hover {
+  background-color: var(--input-stroke);
+  border: 1px solid var(--brand-light);
+  transform: border-color 0.3s;
+  border-radius: 8px;
+}
+
+/* Adiciona uma borda ao redor da imagem ao selecionar o radio */
+.theme-input:checked + .theme-label img {
+  border-color: #555; /* Cor da borda ao selecionar */
+}
+

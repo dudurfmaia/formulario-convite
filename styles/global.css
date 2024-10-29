@@ -44,20 +44,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   background-color: var(--shape-background);
   overflow: hidden;
+ 
 }
 
 #page {
   display: grid;
   grid-template-columns: 31.25% 68.75%;
+  
 }
 
 img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+::-webkit-scrollbar-track {
+  background: var(--shape-body);
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--shape-background);
+  border-radius: 12px;
+  border: 4px solid var(--shape-body);
+}
+::-webkit-scrollbar {
+  background-color: var(--shape-body);
+  border-radius: 12px;
 }
