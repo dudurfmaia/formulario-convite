@@ -19,7 +19,7 @@ fieldset {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    vertical-align: middle;
+    
     & h1 {
       font: var(--heading-sm);
       color: var(--text-heading);
