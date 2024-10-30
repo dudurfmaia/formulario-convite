@@ -1,6 +1,10 @@
 .dados {
   margin-top: 3rem;
   display: grid;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: var(--input-stroke);
+
   & .headerrrr {
     display: flex;
     margin-bottom: 2.5rem;
@@ -23,4 +27,37 @@
   width: 35rem;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 3rem;
+}
+
+.terms {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  display: grid;
+  gap: 0.5rem;
+  & img {
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  & input {
+    display: none;
+  }
+  & h2 {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+  & span {
+    text-transform: capitalize;
+    color: var(--brand-light);
+    text-decoration: underline;
+  }
+}
+
+.check:checked {
 }
