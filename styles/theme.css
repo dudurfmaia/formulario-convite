@@ -56,8 +56,7 @@
   border-radius: 8px;
 }
 
-/* Adiciona uma borda ao redor da imagem ao selecionar o radio */
 .theme-input:checked + .theme-label img {
-  border-color: #555; /* Cor da borda ao selecionar */
+  border-color: #555; 
 }
 

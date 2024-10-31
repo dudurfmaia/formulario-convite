@@ -29,35 +29,59 @@
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
 }
-
-.terms {
+.terms-container {
   margin-top: 2.5rem;
-  margin-bottom: 3rem;
   display: grid;
-  gap: 0.5rem;
-  & img {
-    cursor: pointer;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+  row-gap: 0.25rem;
 }
 .check {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  & input {
-    display: none;
-  }
-  & h2 {
+  & span {
     font: var(--body-sm);
     color: var(--text-body);
   }
-  & span {
-    text-transform: capitalize;
+  & a {
     color: var(--brand-light);
-    text-decoration: underline;
+    text-transform: capitalize;
   }
 }
+.input-terms {
+  display: none;
+}
 
-.check:checked {
+/* Estilo da label para exibir o SVG */
+.label-terms {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  display: inline-block;
+  background-size: cover;
+  background-image: url("../assets/icons/Frame\ 48095946.svg"); /* Caminho para o SVG padrão */
+}
+
+/* Altera a imagem de fundo da label quando o checkbox está selecionado */
+.input-terms:checked + .label-terms {
+  background-image: url("../assets/icons/Frame\ 4809594611111.svg"); /* Caminho para o SVG checked */
+}
+
+/* Estilo do botão */
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.6;
+  pointer-events: none; /* Desativa o botão inicialmente */
+}
+
+/* Ativa o botão quando o checkbox é marcado */
+.input-terms:checked ~ .submit-btn {
+  background-color: #4caf50;
+  opacity: 1;
+  pointer-events: auto;
 }
