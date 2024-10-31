@@ -19,7 +19,7 @@ fieldset {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    
+
     & h1 {
       font: var(--heading-sm);
       color: var(--text-heading);
@@ -61,6 +61,7 @@ form {
 .radio-wrapper {
   display: grid;
   width: 35rem;
+  position: relative;
   margin-top: 1rem;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -73,6 +74,54 @@ form {
     opacity: 0;
   }
 }
+.radio-groupp {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  background-color: var(--input-base);
+  width: 17rem;
+  position: absolute;
+  justify-self: end;
+  bottom: 0;
+  gap: 8px;
+  height: 3rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+}
+.legend-radio {
+  font: var(--body-sm);
+  color: var(--text-body);
+  position: absolute;
+  right: 240px;
+  bottom: 59px;
+}
+
+.radio-inputt {
+  display: none; /* Esconde os radio buttons padrão */
+}
+
+.radio-labell {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  gap: 8px;
+  padding: 4px;
+  width: 8.125rem;
+  transform: background 0.3s;
+}
+
+.radio-inputt:checked + .radio-labell {
+  background-color: var(--input-stroke); /* Cor de fundo quando selecionado */
+  transition: background 0.3s;
+}
+
+.radio-icon {
+  width: 1.25rem; /* Ajuste o tamanho do ícone */
+  height: 1.25rem; /* Ajuste o tamanho do ícone */
+}
+
 .title {
   display: flex;
   position: absolute;

@@ -55,35 +55,37 @@
                 <input type="date" id="date" name="date" required />
               </div>
 
-              <div class="radio">
-                <label class="title" for="type">Tipo</label>
-                <div class="buttonum">
-                  <label for="type">
-                    <img
-                      src="./assets/icons/building-22.svg"
-                      alt=""
-                    />Presencial
-                    <input
-                      type="radio"
-                      name="type"
-                      id="type"
-                      value="Presencial"
-                      required
-                    />
-                  </label>
-                </div>
-                <div class="button">
-                  <label for="type">
-                    <img src="./assets/icons/video.svg" alt="" />Online
-                    <input
-                      type="radio"
-                      name="type"
-                      id="type"
-                      value="Online"
-                      required
-                    />
-                  </label>
-                </div>
+              <legend class="legend-radio">Tipo</legend>
+              <div class="radio-groupp">
+                <input
+                  type="radio"
+                  id="presencial"
+                  name="options"
+                  class="radio-inputt"
+                />
+                <label for="presencial" class="radio-labell">
+                  <img
+                    src="./assets/icons/building-22.svg"
+                    alt="presencial"
+                    class="radio-icon"
+                  />
+                  <p>Presencial</p>
+                </label>
+
+                <input
+                  type="radio"
+                  id="online"
+                  name="options"
+                  class="radio-inputt"
+                />
+                <label for="online" class="radio-labell">
+                  <img
+                    src="./assets/icons/video.svg"
+                    alt="online"
+                    class="radio-icon"
+                  />
+                  <p>Online</p>
+                </label>
               </div>
               <div>
                 <label for="local">Local</label>
@@ -245,187 +247,197 @@
               <legend class="legend-theme">Tema do evento</legend>
               <div class="theme-wrapperr">
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="birth"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="birth"
+                    name="theme"
+                    value="birth"
+                    class="theme-input"
+                  />
+                  <label for="birth" class="theme-label">
+                    <img
+                      src="./assets/icons/Image.png"
+                      alt="Imagem de Aniversário"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image.png" alt="" />
-                      <p>Aniversário</p>
-                    </label>
-                  </div>
+                    <p>Aniversário</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="infantil"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="infantil"
+                    name="theme"
+                    value="infantil"
+                    class="theme-input"
+                  />
+                  <label for="infantil" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-1.png"
+                      alt="Imagem de festa infantil"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-1.png" alt="" />
-                      <p>Infantil</p>
-                    </label>
-                  </div>
+                    <p>Infantil</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="formatura"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="form"
+                    name="theme"
+                    value="form"
+                    class="theme-input"
+                  />
+                  <label for="form" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-2.png"
+                      alt="Imagem de chapéu de formatura"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-2.png" alt="" />
-                      <p>Formatura</p>
-                    </label>
-                  </div>
+                    <p>Formatura</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="casamento"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="casamento"
+                    name="theme"
+                    value="casamento"
+                    class="theme-input"
+                  />
+                  <label for="casamento" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-3.png"
+                      alt="Imagem de aliança de casamento"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-3.png" alt="" />
-                      <p>Casamento</p>
-                    </label>
-                  </div>
+                    <p>Casamento</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="birth"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="chabebe"
+                    name="theme"
+                    value="chabebe"
+                    class="theme-input"
+                  />
+                  <label for="chabebe" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-4.png"
+                      alt="Imagem de festa de bebe"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-4.png" alt="" />
-                      <p>Chá de bebê</p>
-                    </label>
-                  </div>
+                    <p>Chá de bebê</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="panela"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="panela"
+                    name="theme"
+                    value="panela"
+                    class="theme-input"
+                  />
+                  <label for="panela" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-5.png"
+                      alt="Imagem de panelas"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-5.png" alt="" />
-                      <p>Chá de panela</p>
-                    </label>
-                  </div>
+                    <p>Chá de panela</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="carnaval"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="carnaval"
+                    name="theme"
+                    value="carnaval"
+                    class="theme-input"
+                  />
+                  <label for="carnaval" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-6.png"
+                      alt="Imagem de carnaval"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-6.png" alt="" />
-                      <p>Carnaval</p>
-                    </label>
-                  </div>
+                    <p>Carnaval</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="pascoa"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="pascoa"
+                    name="theme"
+                    value="pascoa"
+                    class="theme-input"
+                  />
+                  <label for="pascoa" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-7.png"
+                      alt="Imagem de coelho da pascoa"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-7.png" alt="" />
-                      <p>Páscoa</p>
-                    </label>
-                  </div>
+                    <p>Páscoa</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="saojoao"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="saojoao"
+                    name="theme"
+                    value="saojoao"
+                    class="theme-input"
+                  />
+                  <label for="saojoao" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-8.png"
+                      alt="Imagem de sao joao"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-8.png" alt="" />
-                      <p>São João</p>
-                    </label>
-                  </div>
+                    <p>São joão</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="Halloween"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="halloween"
+                    name="theme"
+                    value="halloween"
+                    class="theme-input"
+                  />
+                  <label for="halloween" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-9.png"
+                      alt="Imagem de halloween"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-9.png" alt="" />
-                      <p>Halloween</p>
-                    </label>
-                  </div>
+                    <p>Halloween</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="natal"
-                      class="theme-input"
+                  <input
+                    type="radio"
+                    id="natal"
+                    name="theme"
+                    value="natal"
+                    class="theme-input"
+                  />
+                  <label for="natal" class="theme-label">
+                    <img
+                      src="./assets/icons/Image-10.png"
+                      alt="Imagem de natal"
                     />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-10.png" alt="" />
-                      <p>Natal</p>
-                    </label>
-                  </div>
+                    <p>Natal</p>
+                  </label>
                 </div>
                 <div class="theme-wrapper">
-                  <div class="theme-card">
-                    <input
-                      type="radio"
-                      id="birth"
-                      name="birth"
-                      value="outro"
-                      class="theme-input"
-                    />
-                    <label for="" class="theme-label">
-                      <img src="./assets/icons/Image-11.png" alt="" />
-                      <p>Outro</p>
-                    </label>
-                  </div>
+                  <input
+                    type="radio"
+                    id="outro"
+                    name="theme"
+                    value="outro"
+                    class="theme-input"
+                  />
+                  <label for="outro" class="theme-label">
+                    <img src="./assets/icons/Image-11.png" alt="outro" />
+                    <p>Outro</p>
+                  </label>
                 </div>
               </div>
             </div>
+
             <div class="divisor">
               <div class="botao">
                 <h2 class="estilo">Estilo</h2>
@@ -532,6 +544,14 @@
                 <span>Aceito receber atualizações e promoções por SMS</span>
               </div>
             </div>
+            <button class="submit" type="submit">
+              <img
+                style="width: 1.25rem; height: 1.25rem"
+                src="./assets/icons/ticket.svg"
+                alt=""
+              />
+              Gerar convite
+            </button>
           </form>
         </fieldset>
       </aside>

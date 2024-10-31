@@ -11,52 +11,53 @@
 }
 
 .theme-input {
-  display: none;
+  display: none; /* Esconde o radio button padrão */
 }
+
 .theme-wrapperr {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 .theme-wrapper {
   display: grid;
+}
 
-  & img {
-    width: 100%;
-    object-fit: cover;
-  }
+/* Estilo para a imagem */
+.theme-wrapper img {
+  width: 100%;
+  object-fit: cover; /* Mantém a proporção da imagem */
 }
 
 .theme-label {
   display: flex;
   flex-direction: column;
-
   cursor: pointer;
   border-radius: 8px;
-  border: 0.5px solid var(--input-stroke);
+  border: 0.5px solid var(--input-stroke); /* Borda padrão */
   width: 8.375rem;
-  padding: 4px;
-
   padding: 4px;
   background-color: var(--shape-button);
   align-items: center;
-  transition: background 0.3s;
-  transition: border-color 0.3s;
-  & p {
+  transition: background 0.3s, border-color 0.3s; /* Transição para o fundo e a borda */
+
+  /* Estilo do texto dentro da label */
+  p {
     font: var(--body-sm);
     color: var(--text-heading);
     margin-top: 0.5rem;
   }
 }
+
+/* Estilo ao passar o mouse sobre a label */
 .theme-label:hover {
   background-color: var(--input-stroke);
   border: 1px solid var(--brand-light);
-  transform: border-color 0.3s;
-  border-radius: 8px;
 }
 
-.theme-input:checked + .theme-label img {
-  border-color: #555; 
+/* Estilo quando o radio button está selecionado */
+.theme-input:checked + .theme-label {
+  border-color: var(--brand-light); /* Borda quando selecionado */
 }
-
