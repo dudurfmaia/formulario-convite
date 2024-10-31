@@ -18,8 +18,8 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
 <br>
 
 <p align="center">
-  <img alt="formulario-convite" src="![Thumbnail](https://github.com/user-attachments/assets/b5c7dceb-b1c0-4760-81e1-4888abf2a6da)
-" width="100%">
+  <img alt="formulario-convite" src="https://github.com/user-attachments/assets/b5c7dceb-b1c0-4760-81e1-4888abf2a6da" width="100%">
+
 </p>
 
 ## 🚀 Tecnologias
